@@ -10,8 +10,10 @@ GET/HEAD/PUT/POST/DELETE，
 实现了主从reactor模型，运用生产者消费者模型实现异步日志线程。
 
 
-分别用了两个接口文件实现对应的接口,
+分别用了三个接口文件实现对应的接口,
 主文件thread_demo.cpp只需要调用对应接口就可以实现对应功能
+
+-HTTP_parse.cpp实现了HTTP有限状态机，并且提供对外接口
 
 -database.cpp实现了向数据库执行SQL的接口
 
